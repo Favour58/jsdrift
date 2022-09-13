@@ -1,0 +1,101 @@
+.container-fluid{
+    background:linear-gradient(90deg,#f00275,#75489f);
+}
+
+.navbar-brand{
+    animation: navbar-brand 1.5s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+@keyframes navbar-brand{
+  0%,40%,100%, {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+#f1{
+  margin-left: 25%;
+}
+#j{
+  margin-left: 5%;
+}
+.fa-car-side{
+  buttom:15%;
+  position: relative;
+  /* display: grid; */
+  -webkit-animation: linear infinite;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 5s;
+}
+@-webkit-keyframes run{
+  0%{
+
+    left: 0;
+  }
+  50%{
+    left: calc(100% - 100px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+.fa-car:hover {
+  transform: scale(1.1);
+  animation-name: linkedin-icon;
+  animation-duration: 500ms;
+}
+
+@keyframes linkedin-icon {
+  100% {
+    /* background-color: #0077B5; */
+    color: white;
+  }
+}
+
+/* .fa-car-rear {
+  font-size: 128px;
+  animation: size 4s infinite 1s;
+}
+@keyframes size {   
+0% {
+font-size: 128px;
+}
+20% {
+font-size: 100px;
+}
+40% {
+font-size: 80px;
+}
+60% {
+font-size: 60px;
+}
+80% {
+font-size: 40px;
+}
+100% {
+font-size: 20px;
+}
+} */
+
+/* @media only screen and (min-width: 768px) {
+
+.img{
+  width: 100%;
+  margin-left: 0%;
+}
+
+}
+
+@media only screen and (min-width: 992px) {
+.img{
+  width: 100%;
+  height: 10%;
+  display: flexbox;
+  margin-left: 0%;
+}
+
+
+} */
